@@ -16,7 +16,7 @@ interface Recommendation {
 }
 
 interface StudentRecommendation {
-  StudentID: string[]
+  StudentID: string
   risk_factors: string[]
   recommendations: Recommendation[]
   next_steps: string[]
