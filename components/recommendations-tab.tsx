@@ -16,7 +16,7 @@ interface Recommendation {
 }
 
 interface StudentRecommendation {
-  StudentID: number
+  StudentID: string[]
   risk_factors: string[]
   recommendations: Recommendation[]
   next_steps: string[]
@@ -30,7 +30,7 @@ export default function RecommendationsTab() {
   const [notFound, setNotFound] = useState(false)
 
   const handleSearch = async () => {
-    if (!studentId.trim()) return
+    if (!studentId) return
 
     try {
       setLoading(true)
