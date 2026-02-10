@@ -77,7 +77,7 @@ export default function RecommendationsTab() {
         <CardContent>
           <div className="flex flex-col xs:flex-row gap-2">
             <Input
-              type="number"
+              type="string"
               placeholder="Enter Student ID"
               value={studentId}
               onChange={(e) => setStudentId(e.target.value)}
